@@ -1,0 +1,32 @@
+{
+  "name": "builder",
+  "description": "Gulp Bild system and file structure boilerplate",
+  "main": "gulpfile.js",
+  "authors": [
+    "Harman Kamboj <playcivil@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "gulp",
+    "stylus",
+    "harman",
+    "kamboj",
+    "jade",
+    "postcss",
+    "autoprefixer",
+    "lost",
+    "grid",
+    "kouto",
+    "swiss",
+    "rucksack",
+    "coffeescript"
+  ],
+  "homepage": "https://github.com/preetkam/builder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

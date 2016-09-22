@@ -1,0 +1,34 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "description": "Gulp Bild system and file structure boilerplate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preetkam/builder.git"
+  },
+  "keywords": [
+    "gulp",
+    "stylus",
+    "harman",
+    "kamboj",
+    "jade",
+    "postcss",
+    "autoprefixer",
+    "lost",
+    "grid",
+    "kouto",
+    "swiss",
+    "rucksack",
+    "coffeescript"
+  ],
+  "author": "Harman Kamboj <playcivil@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preetkam/builder/issues"
+  },
+  "homepage": "https://github.com/preetkam/builder#readme"
+}
