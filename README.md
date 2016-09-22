@@ -14,7 +14,12 @@ install npm and bower modules
     npm install && bower install
 ```
 That's all you are good to go!
-## Working
+## Usage
+To run all taks simply type in your command line
 ```
-    gulp styles
+    gulp
+```
+To watch over changes
+```
+    gulp watch
 ```
