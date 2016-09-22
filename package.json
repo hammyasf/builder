@@ -30,5 +30,15 @@
   "bugs": {
     "url": "https://github.com/preetkam/builder/issues"
   },
-  "homepage": "https://github.com/preetkam/builder#readme"
+  "homepage": "https://github.com/preetkam/builder#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-stylus": "^2.5.0",
+    "kouto-swiss": "^0.12.0",
+    "lost": "^7.1.0",
+    "rucksack-css": "^0.8.6"
+  }
 }
