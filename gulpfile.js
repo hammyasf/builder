@@ -10,9 +10,7 @@ var rucksack = require('rucksack-css');
 var mqpack = require('css-mqpacker');
 var cssnano = require("cssnano");
 
-gulp.task("default", function() {
-	//Some Stuff here
-});
+gulp.task('default',['styles']);
 
 gulp.task('styles', function() {
 
@@ -31,10 +29,10 @@ gulp.task('styles', function() {
       	'use': koutoSwiss()
       }))
       .pipe(postcss(processors))
-      .pipe(gulp.dest('css'))
+      .pipe(gulp.dest('bin/css'))
       .pipe(notify('Styles Compiled!'));
 });
 
 gulp.task('watch', function() {
-    // content
+    gulp.watch('stylus/**/*.styl', ['styles']);
 });
