@@ -1,11 +1,8 @@
 var gulp = require('gulp');
 var notify = require('gulp-notify');
-// LOAD STYLUS
 var stylus = require('gulp-stylus');
-// STYLUS PLUGINS
 var koutoSwiss = require('kouto-swiss');
 var rupture = require('rupture');
-// LOAD POST CSS
 var postcss = require('gulp-postcss');
 // POST CSS PLUGINS
 var autoprefixer = require('autoprefixer');
@@ -13,6 +10,14 @@ var lost = require('lost');
 var rucksack = require('rucksack-css');
 var mqpack = require('css-mqpacker');
 var cssnano = require("cssnano");
+
+/**
+ * Takes error and emit it preventing gulp watch to stop everytime we have an error.
+ */
+function swallowError(e) {
+	console.log(e.toString());
+	this.emit('end');
+}
 
 gulp.task('default',['styles']);
 
@@ -32,7 +37,9 @@ gulp.task('styles', function() {
       .pipe(stylus({
       	'use': [koutoSwiss(), rupture()]
       }))
+      .on('error', swallowError)
       .pipe(postcss(processors))
+      .on('error', swallowError)
       .pipe(gulp.dest('bin/css'))
       .pipe(notify('Styles Compiled!'));
 });
