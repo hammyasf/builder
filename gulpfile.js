@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var notify = require('gulp-notify');
+// LOAD STYLUS
 var stylus = require('gulp-stylus');
+// STYLUS PLUGINS
 var koutoSwiss = require('kouto-swiss');
+var rupture = require('rupture');
+// LOAD POST CSS
 var postcss = require('gulp-postcss');
 // POST CSS PLUGINS
 var autoprefixer = require('autoprefixer');
@@ -26,7 +30,7 @@ gulp.task('styles', function() {
 
     gulp.src('stylus/style.styl')
       .pipe(stylus({
-      	'use': koutoSwiss()
+      	'use': [koutoSwiss(), rupture()]
       }))
       .pipe(postcss(processors))
       .pipe(gulp.dest('bin/css'))
